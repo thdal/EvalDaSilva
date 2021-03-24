@@ -37,5 +37,14 @@ namespace EvalDaSilvaTest
             Assert.AreEqual("FizzBuzz", FizzStr);
         }
 
+        [TestMethod]
+        [ExpectedException(typeof(Exception), "Doit être supérieur à 0")]
+        public void ExceptioAliceDonneLeNombreZero()
+        {
+            int nb = 0;
+
+            String FizzStr = FizzBuzzGame.BobRepond(nb);
+        }
+
     }
 }
