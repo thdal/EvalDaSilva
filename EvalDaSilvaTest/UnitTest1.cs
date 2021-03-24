@@ -46,5 +46,14 @@ namespace EvalDaSilvaTest
             String FizzStr = FizzBuzzGame.BobRepond(nb);
         }
 
+        [TestMethod]
+        [ExpectedException(typeof(Exception), "Ne doit pas être négatif")]
+        public void ExceptionAliceDonneUnNombreNegatif()
+        {
+            int nb = -1;
+
+            String FizzStr = FizzBuzzGame.BobRepond(nb);
+        }
+
     }
 }
