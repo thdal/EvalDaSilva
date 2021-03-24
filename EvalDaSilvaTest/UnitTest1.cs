@@ -17,5 +17,15 @@ namespace EvalDaSilvaTest
             Assert.AreEqual("Fizz", FizzStr);
         }
 
+        [TestMethod]
+        public void AliceDonneUnNombreMultipleDe5()
+        {
+            int nb = 25;
+
+            String FizzStr = FizzBuzzGame.BobRepond(nb);
+
+            Assert.AreEqual("Buzz", FizzStr);
+        }
+
     }
 }
